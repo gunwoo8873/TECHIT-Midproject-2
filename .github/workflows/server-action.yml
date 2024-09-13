@@ -5,6 +5,13 @@ on:
 #  schedule: [cron: "* * * * 6"]
 
 jobs:
+  Checkout-Repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        path: '${{ gihub.workspace }}/server'
+
   Setup:
     runs-on: ubuntu-latest
     steps:

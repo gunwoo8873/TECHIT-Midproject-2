@@ -1,0 +1,1 @@
+const id_check = [0-9/a-z/A-Z]

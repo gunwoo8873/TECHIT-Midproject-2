@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
-    <link rel="stylesheet" href="./css/index-style.css">
+    <title>{{ name }} Main Home</title>
+    <link rel="stylesheet" href="css/index-style.css">
 </head>
 <body>
     <header>
-        <form action="/:id" method="post">
+        <form id="request--btn" method="get">
             <div id="head__menu--bar">
-                <button id="github" class="head__menu--btn">GITHUB</button>
-                <button id="dockerhub" class="head__menu--btn">DOCKER</button>
-                <button id="project" class="head__menu--btn">PROJECT</button>
-                <button id="member" class="head__menu--btn">MEMBER</button>
-                <button id="history" class="head__menu--btn">HISTORY</button>
+                <a id="github" class="head__menu--btn" href="/github">GITHUB</a>
+                <a id="dockerhub" class="head__menu--btn">DOCKER</a>
+                <a id="project" class="head__menu--btn">PROJECT</a>
+                <a id="member" class="head__menu--btn">MEMBER</a>
+                <a id="history" class="head__menu--btn">HISTORY</a>
             </div>
             <div id="head__login--bar">
-                <button id="signin" class="head__login--btn"></button>
+                <a id="signin" class="head__login--btn" href="/signin">SIGN IN</a>
             </div>
         </form>
     </header>
